@@ -3,16 +3,142 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#191926"
     android:layout_height="match_parent"
     tools:context=".MovieDetailsActivity">
 
     <ImageView
+        android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_orig_background"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="42dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="56dp"
+        android:drawableLeft="@drawable/ic_path"
+        android:gravity="end"
+        android:text="Back"
+        android:textColor="#6D6D80"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/film_name_tv"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="254dp"
+        android:text="Avengers:\nEnd Game"
+        android:textSize="40dp"
+        android:textColor="#ECECEC"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/age_image_v"
+        android:layout_width="24dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/film_name_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/info_age" />
+
+    <TextView
+        android:id="@+id/tags_tv"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Action, Adventure, Fantasy"
+        android:textColor="#FF3466"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/film_name_tv" />
+
+    <RatingBar
+        android:id="@+id/ratingBar_small"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:outlineSpotShadowColor="#FF3365"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tags_tv" />
+
+    <TextView
+        android:id="@+id/counter_review_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="125 Reviews"
+        android:textStyle="bold"
+        android:textColor="#6D6D80"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ratingBar_small"
+        app:layout_constraintTop_toBottomOf="@+id/tags_tv" />
+
+    <TextView
+        android:id="@+id/storyline_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Storyline"
+        android:layout_marginHorizontal="16dp"
+        android:textStyle="bold"
+        android:textColor="#ECECEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counter_review_tv" />
+
+    <TextView
+        android:id="@+id/description_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="4dp"
+        android:text="After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe."
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FFFFFF"
+        android:paddingVertical="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/storyline_title_tv" />
+
+    <TextView
+        android:id="@+id/cast_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Cast"
+        android:textStyle="bold"
+        android:textColor="#ECECEC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description_tv" />
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
