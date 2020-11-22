@@ -149,7 +149,6 @@
             android:id="@+id/movie1_image_v"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
             android:layout_marginTop="7dp"
             android:layout_marginStart="16dp"
             app:layout_constraintEnd_toStartOf="@+id/movie2_image_v"
@@ -162,7 +161,6 @@
             android:id="@+id/movie2_image_v"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
             android:layout_marginTop="4dp"
             app:layout_constraintEnd_toStartOf="@+id/movie3_image_v"
             app:layout_constraintStart_toEndOf="@+id/movie1_image_v"
@@ -173,7 +171,6 @@
             android:id="@+id/movie3_image_v"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
             android:layout_marginTop="4dp"
             app:layout_constraintEnd_toStartOf="@+id/movie4_image_v"
             app:layout_constraintStart_toEndOf="@+id/movie2_image_v"
@@ -184,7 +181,6 @@
             android:id="@+id/movie4_image_v"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:scaleType="centerCrop"
             android:layout_marginTop="4dp"
             android:layout_marginEnd="16dp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -193,42 +189,38 @@
             app:srcCompat="@drawable/movie4" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Robert Downey Jr."
             android:textColor="#D8D8D8"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/movie1_image_v"
             app:layout_constraintStart_toStartOf="@+id/movie1_image_v"
             app:layout_constraintTop_toBottomOf="@+id/movie1_image_v" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Chris Evans"
             android:textColor="#D8D8D8"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/movie2_image_v"
             app:layout_constraintStart_toStartOf="@+id/movie2_image_v"
             app:layout_constraintTop_toBottomOf="@+id/movie2_image_v" />
 
         <TextView
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Mark Ruffalo"
-            android:layout_width="0dp"
             android:textColor="#D8D8D8"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/movie3_image_v"
             app:layout_constraintStart_toStartOf="@+id/movie3_image_v"
             app:layout_constraintTop_toBottomOf="@+id/movie3_image_v" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:text="Chris Hemsworth"
             android:textColor="#D8D8D8"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="@+id/movie4_image_v"
             app:layout_constraintStart_toStartOf="@+id/movie4_image_v"
             app:layout_constraintTop_toBottomOf="@+id/movie4_image_v" />
 
